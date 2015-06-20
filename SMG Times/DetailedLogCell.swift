@@ -33,11 +33,11 @@ class DetailedLogCell: UITableViewCell {
     }
     
     static func nib() -> UINib {
-        return UINib(nibName: "DetailedLogCell", bundle: NSBundle.mainBundle())
+        return UINib(nibName: "DetailedCell", bundle: NSBundle.mainBundle())
     }
     
     static func fromNib() -> DetailedLogCell? {
-        var objects = NSBundle.mainBundle().loadNibNamed("DetailedLogCell", owner: nil, options: nil)
+        var objects = NSBundle.mainBundle().loadNibNamed("DetailedCell", owner: nil, options: nil)
         if let UIElements = objects {
             var cell = UIElements.first as! DetailedLogCell
             return cell
@@ -45,4 +45,7 @@ class DetailedLogCell: UITableViewCell {
         return nil
     }
     
+    static func height() -> CGFloat {
+        return 220
+    }
 }

@@ -38,6 +38,13 @@ class ViewController: UITableViewController {
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return DailyLogCell.height()
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let record = self.records?[indexPath.row]
+        let detailsController = self.storyboard?.instantiateViewControllerWithIdentifier("DetailsViewController") as! DetailsViewController
+        detailsController.record = record!
+        self.presentViewController(detailsController, animated: true, completion: nil)
+    }
 
 }
 
