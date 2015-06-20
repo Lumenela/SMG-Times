@@ -15,6 +15,9 @@ class DetailsViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.registerNib(DetailedLogCell.nib(), forCellReuseIdentifier: "DetailedCell")
+        if let time = self.record?.shortDateString {
+            self.navigationItem.title = String(format: "CityIndex, %@", time)
+        }
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

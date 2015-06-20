@@ -21,28 +21,47 @@ class ViewController: UITableViewController {
         self.tableView.registerNib(DailyLogCell.nib(), forCellReuseIdentifier: "Cell")
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tableView.reloadData()
+    }
+    
     override func viewDidAppear(animated: Bool) {
         toolbar = UIToolbar()
         toolbar!.barStyle = UIBarStyle.Default
         toolbar!.sizeToFit()
         
-        let toolbarHeight: CGFloat = 60
+        
+        let toolbarHeight: CGFloat = 80
         let viewBounds: CGRect = self.view.bounds
         let rootViewHeight: CGFloat = CGRectGetHeight(viewBounds)
         let rootViewWidth: CGFloat = CGRectGetWidth(viewBounds)
-        let rectArea: CGRect = CGRectMake(0, rootViewHeight - toolbarHeight, rootViewWidth, toolbarHeight)
+        let rectArea: CGRect = CGRectMake(0, rootViewHeight, rootViewWidth, toolbarHeight+40)
         toolbar?.frame = rectArea
         let greenButton: UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
-        greenButton.setTitle("LOG TIME", forState: UIControlState.Normal)
+        let logTitle = NSAttributedString(string: "LOG TIME", attributes: [NSFontAttributeName : UIFont.systemFontOfSize(30), NSForegroundColorAttributeName : UIColor.whiteColor()])
+        greenButton.setAttributedTitle(logTitle, forState: UIControlState.Normal)
         greenButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-        greenButton.frame=CGRectMake(0, 0, rootViewWidth, 60)
-        greenButton.backgroundColor = UIColor(red: CGFloat(0), green: CGFloat(255), blue: CGFloat(0), alpha: CGFloat(100))
+        greenButton.frame=CGRectMake(0, 0, rootViewWidth, toolbarHeight)
+        greenButton.backgroundColor = UIColor(red: CGFloat(0), green: CGFloat(230.0/255.0), blue: CGFloat(118.0/255.0), alpha: CGFloat(100))
         toolbar?.addSubview(greenButton)
         self.navigationController!.view.addSubview(toolbar!)
+        UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
+            toolbar?.frame = CGRectMake(0, rootViewHeight - toolbarHeight, rootViewWidth, toolbarHeight+40)
+        }, completion: nil)
+        
+        self.navigationItem.title = "CityIndex"
     }
 
-    override func viewDidDisappear(animated: Bool) {
-        self.toolbar!.removeFromSuperview()
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
+            if let aToolbar = self.toolbar {
+                aToolbar.frame = CGRectMake(0, CGRectGetHeight(self.view.frame), aToolbar.frame.size.width, aToolbar.frame.size.width)
+            }
+            }, completion: {(completed: Bool) -> Void in
+                self.toolbar!.removeFromSuperview()
+            })
     }
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -79,20 +98,9 @@ class ViewController: UITableViewController {
         }
     }
     
-//    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        return 60
-//    }
-//    
-//    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-//        let footer: UIView = UIView(frame: CGRectMake(0, 0, 320, 60))
-//        let greenButton: UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
-//        greenButton.setTitle("LOG TIME", forState: UIControlState.Normal)
-//        greenButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-//        greenButton.frame=CGRectMake(0, 0, 320, 60)
-//        greenButton.backgroundColor = UIColor(red: CGFloat(0), green: CGFloat(230), blue: CGFloat(118), alpha: CGFloat(100))
-//        footer.addSubview(greenButton)
-//        return footer
-//    }
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 1
+    }
     
 }
 
