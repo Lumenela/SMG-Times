@@ -35,4 +35,8 @@ class DailyLogCell: UITableViewCell {
         return nil
     }
     
+    static func height() -> CGFloat {
+        return 66
+    }
+    
 }

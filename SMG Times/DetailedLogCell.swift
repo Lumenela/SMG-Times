@@ -12,13 +12,21 @@ import UIKit
 class DetailedLogCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel : UILabel!
-    @IBOutlet weak var timeLabel: UILabel!
-    
+    @IBOutlet weak var timeLabel: UILabel!    
     @IBOutlet weak var minusBtn: UIButton!
-    
     @IBOutlet weak var plusBtn: UIButton!
     @IBOutlet weak var timeIcon: UIImageView!
     @IBOutlet weak var bgLbl: UIImageView!
+    
+    var timeRecord : TimeRecord? {
+        didSet {
+            if let record = timeRecord {
+                self.nameLabel?.text = record.type.name
+                self.timeLabel?.text = String(record.time)
+            }
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

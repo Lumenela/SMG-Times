@@ -15,6 +15,7 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.records = DailyRecord.fake()
+        self.tableView.registerNib(DailyLogCell.nib(), forCellReuseIdentifier: "Cell")
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -26,6 +27,16 @@ class ViewController: UITableViewController {
             return list.count
         }
         return 0
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! DailyLogCell
+        cell.dailyRecord = self.records?[indexPath.row]
+        return cell
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return DailyLogCell.height()
     }
 
 }
