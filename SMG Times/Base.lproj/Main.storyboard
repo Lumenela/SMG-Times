@@ -35,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="970" y="539"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="kTr-G8-U6E">
             <objects>
-                <viewController id="GMr-nu-Uab" sceneMemberID="viewController">
+                <viewController id="GMr-nu-Uab" customClass="DetailsViewController" customModule="Spring" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zdn-14-nar"/>
                         <viewControllerLayoutGuide type="bottom" id="9o3-pn-0ms"/>
@@ -176,6 +176,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Trf-De-c8Q">
                                 <rect key="frame" x="0.0" y="124" width="600" height="476"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="GMr-nu-Uab" id="bYb-Ae-HbD"/>
+                                    <outlet property="delegate" destination="GMr-nu-Uab" id="XS4-Z1-GoE"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.96957009668508287" green="0.96957009668508287" blue="0.96957009668508287" alpha="1" colorSpace="calibratedRGB"/>
@@ -189,6 +193,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Trf-De-c8Q" secondAttribute="trailing" constant="-16" id="jOV-Xw-7oj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailedTable" destination="Trf-De-c8Q" id="mi6-KN-aF0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqW-cJ-8Mk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
