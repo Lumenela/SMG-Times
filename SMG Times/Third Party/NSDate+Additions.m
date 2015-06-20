@@ -509,7 +509,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSString *)monthAndDayString {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"MMM d"];
+    [dateFormatter setDateFormat:@"d MMM"];
     return [dateFormatter stringFromDate:self];
 }
 
