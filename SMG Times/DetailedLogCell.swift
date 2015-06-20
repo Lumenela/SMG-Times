@@ -23,6 +23,8 @@ class DetailedLogCell: UITableViewCell {
             if let record = timeRecord {
                 self.nameLabel?.text = record.type.name
                 self.timeLabel?.text = String(record.time)
+                self.timeIcon?.image = UIImage(named: record.type.icon_name)
+                self.bgLbl?.image = UIImage(named: record.type.bg_name)
             }
         }
     }
