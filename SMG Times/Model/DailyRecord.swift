@@ -15,9 +15,17 @@ class DailyRecord {
     var day : String {
         get {
             if let aDate = self.date {
-                return "";
+                return aDate.weekdayName;
             }
             return "";
+        }
+    }
+    
+    var shortDateString : String {
+        get {
+            if let aDate = self.date {
+                return aDate.monthAndDayString;
+            }
         }
     }
 }
