@@ -39,7 +39,9 @@ class DetailedHeader: UIView {
         }
         
         var index = 0
-        if let records = self.dailyRecord?.timeRecordList {
+
+        if let recordList = self.dailyRecord?.timeRecordList {
+            let records = recordList.filter({($0 as TimeRecord).time > 0})
             for timeRecord in records {
                 if let label = self.timeLabels?[index] {
                     label.text = String(format : "%d", timeRecord.time)

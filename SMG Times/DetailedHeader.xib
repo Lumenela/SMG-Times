@@ -11,7 +11,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WID-8z-2j3">
-                    <rect key="frame" x="134" y="118" width="331" height="34"/>
+                    <rect key="frame" x="141" y="118" width="319" height="34"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzb-Po-0UW">
                             <rect key="frame" x="0.0" y="0.0" width="14" height="30"/>
@@ -40,7 +40,7 @@
                                         <constraint firstAttribute="height" priority="250" constant="14" id="8EC-QB-I92"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                    <color key="textColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.20784313976764679" green="0.20784313976764679" blue="0.26274511218070984" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -60,8 +60,18 @@
                                 <outlet property="label" destination="W5Q-Sp-icj" id="4kv-fK-dtA"/>
                             </connections>
                         </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXM-7P-mgs">
+                            <rect key="frame" x="108" y="0.0" width="14" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="250" constant="21" id="LAb-te-3o3"/>
+                                <constraint firstAttribute="width" priority="250" constant="42" id="nLd-n8-1LX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="textColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="uF2-Za-J9y" customClass="TagView" customModule="SMG_Times" customModuleProvider="target">
-                            <rect key="frame" x="136" y="5" width="87" height="29"/>
+                            <rect key="frame" x="124" y="5" width="87" height="29"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dev-small" translatesAutoresizingMaskIntoConstraints="NO" id="xno-fY-Pk2">
                                     <rect key="frame" x="5" y="10" width="9" height="9"/>
@@ -77,7 +87,7 @@
                                         <constraint firstAttribute="height" priority="250" constant="14" id="Xa2-PK-9sy"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                    <color key="textColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.20784313976764679" green="0.20784313976764679" blue="0.26274511218070984" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -97,18 +107,18 @@
                                 <outlet property="label" destination="ceR-WF-97C" id="AyH-Wo-Z1K"/>
                             </connections>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXM-7P-mgs">
-                            <rect key="frame" x="120" y="0.0" width="14" height="30"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6X-5S-4jt">
+                            <rect key="frame" x="216" y="0.0" width="14" height="30"/>
                             <constraints>
-                                <constraint firstAttribute="height" priority="250" constant="21" id="LAb-te-3o3"/>
-                                <constraint firstAttribute="width" priority="250" constant="42" id="nLd-n8-1LX"/>
+                                <constraint firstAttribute="height" priority="250" constant="21" id="2bj-i1-8iV"/>
+                                <constraint firstAttribute="width" priority="250" constant="42" id="2qm-eH-PUY"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                             <color key="textColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="pr1-AS-htw" customClass="TagView" customModule="SMG_Times" customModuleProvider="target">
-                            <rect key="frame" x="244" y="5" width="87" height="29"/>
+                            <rect key="frame" x="232" y="5" width="87" height="29"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dev-small" translatesAutoresizingMaskIntoConstraints="NO" id="pbu-7R-iCe">
                                     <rect key="frame" x="5" y="10" width="9" height="9"/>
@@ -124,7 +134,7 @@
                                         <constraint firstAttribute="height" priority="250" constant="14" id="leI-23-s7T"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                    <color key="textColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.20784313976764679" green="0.20784313976764679" blue="0.26274511218070984" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -144,20 +154,11 @@
                                 <outlet property="label" destination="m4B-Ua-CPj" id="qDJ-xU-nXj"/>
                             </connections>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6X-5S-4jt">
-                            <rect key="frame" x="228" y="0.0" width="14" height="30"/>
-                            <constraints>
-                                <constraint firstAttribute="height" priority="250" constant="21" id="2bj-i1-8iV"/>
-                                <constraint firstAttribute="width" priority="250" constant="42" id="2qm-eH-PUY"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                            <color key="textColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="RXM-7P-mgs" firstAttribute="leading" secondItem="w1v-Gc-jGL" secondAttribute="trailing" constant="3" id="8Ox-om-qaU"/>
+                        <constraint firstItem="RXM-7P-mgs" firstAttribute="leading" secondItem="w1v-Gc-jGL" secondAttribute="trailing" constant="5" id="BBz-gf-i73"/>
                         <constraint firstItem="pr1-AS-htw" firstAttribute="top" secondItem="WID-8z-2j3" secondAttribute="top" constant="5" id="HPn-3d-ruy"/>
                         <constraint firstItem="w1v-Gc-jGL" firstAttribute="leading" secondItem="fzb-Po-0UW" secondAttribute="trailing" constant="2" id="Jgq-yX-eak"/>
                         <constraint firstAttribute="height" constant="34" id="N8f-GJ-wRA"/>
@@ -169,7 +170,7 @@
                         <constraint firstItem="RXM-7P-mgs" firstAttribute="top" secondItem="WID-8z-2j3" secondAttribute="top" id="eSL-KN-2b3"/>
                         <constraint firstItem="i6X-5S-4jt" firstAttribute="top" secondItem="WID-8z-2j3" secondAttribute="top" id="fPA-4Z-a1v"/>
                         <constraint firstItem="fzb-Po-0UW" firstAttribute="top" secondItem="WID-8z-2j3" secondAttribute="top" id="irH-T1-UfK"/>
-                        <constraint firstAttribute="width" constant="331" id="lUk-C1-diq"/>
+                        <constraint firstAttribute="width" constant="319" id="lUk-C1-diq"/>
                         <constraint firstItem="fzb-Po-0UW" firstAttribute="leading" secondItem="WID-8z-2j3" secondAttribute="leading" id="nzs-gx-OKP"/>
                         <constraint firstItem="pr1-AS-htw" firstAttribute="leading" secondItem="i6X-5S-4jt" secondAttribute="trailing" constant="2" id="p8S-Nr-kIO"/>
                         <constraint firstItem="uF2-Za-J9y" firstAttribute="leading" secondItem="RXM-7P-mgs" secondAttribute="trailing" constant="2" id="pSO-Za-Ybi"/>
@@ -179,6 +180,7 @@
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="8Ox-om-qaU"/>
+                            <exclude reference="Xdd-fH-jVW"/>
                             <exclude reference="pSO-Za-Ybi"/>
                         </mask>
                     </variation>
