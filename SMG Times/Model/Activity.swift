@@ -20,19 +20,22 @@ struct Activity {
     var name: String
     var shortName: String
     var type: ActivityType
+    var icon_name: String
+    var small_icon_name: String
+    var bg_name: String
     
     static func development() -> Activity {
-        let activity = Activity(name: "DEVELOPMENT", shortName: "DEV", type: ActivityType.Development)
+        let activity = Activity(name: "Development", shortName: "Dev", type: ActivityType.Development, icon_name: "dev", small_icon_name: "dev-small", bg_name: "dev_large")
         return activity;
     }
     
     static func management() -> Activity {
-        let activity = Activity(name: "MANAGEMENT", shortName: "PM", type: ActivityType.Management)
+        let activity = Activity(name: "Management", shortName: "PM", type: ActivityType.Management, icon_name: "pm", small_icon_name: "pm-small", bg_name: "pm_large")
         return activity;
     }
     
     static func communication() -> Activity {
-        let activity = Activity(name: "COMMUNICATION", shortName: "COMMUNIC.", type: ActivityType.Communication)
+        let activity = Activity(name: "Communication", shortName: "Communic.", type: ActivityType.Communication, icon_name: "com", small_icon_name: "com-small", bg_name: "com_large")
         return activity;
     }
 }

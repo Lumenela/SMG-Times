@@ -14,7 +14,7 @@ class DetailsViewController: UITableViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.registerNib(DailyLogCell.nib(), forCellReuseIdentifier: "DetailedCell")
+        self.tableView.registerNib(DetailedLogCell.nib(), forCellReuseIdentifier: "DetailedCell")
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -35,7 +35,7 @@ class DetailsViewController: UITableViewController{
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return DailyLogCell.height()
+        return DetailedLogCell.height()
     }
 
     
