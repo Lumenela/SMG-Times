@@ -28,7 +28,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="EgR-Q1-coQ"/>
                     <connections>
-                        <segue destination="GMr-nu-Uab" kind="show" id="rVq-lt-QgY"/>
+                        <segue destination="GMr-nu-Uab" kind="show" identifier="Detail" id="rVq-lt-QgY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIZ-ik-xew" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -38,7 +38,7 @@
         <!--Details View Controller-->
         <scene sceneID="kTr-G8-U6E">
             <objects>
-                <viewController id="GMr-nu-Uab" customClass="DetailsViewController" customModule="Spring" sceneMemberID="viewController">
+                <viewController id="GMr-nu-Uab" customClass="DetailsViewController" customModule="SMG_Times" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zdn-14-nar"/>
                         <viewControllerLayoutGuide type="bottom" id="9o3-pn-0ms"/>
