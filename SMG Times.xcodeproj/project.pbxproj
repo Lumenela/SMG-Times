@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		36B0B82653691BA393308B2D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F5CA693B67D0AE7EB63C36 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		829B63E51B35EDAA0001DC2F /* DetailedLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829B63E41B35EDAA0001DC2F /* DetailedLogCell.swift */; };
+		829B63E71B35EE2E0001DC2F /* DetailedLogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829B63E61B35EE2E0001DC2F /* DetailedLogCell.xib */; };
 		A16ED0F01B35D005006F4D94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16ED0EF1B35D005006F4D94 /* AppDelegate.swift */; };
 		A16ED0F21B35D005006F4D94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16ED0F11B35D005006F4D94 /* ViewController.swift */; };
 		A16ED0F51B35D005006F4D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16ED0F31B35D005006F4D94 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		829B63E41B35EDAA0001DC2F /* DetailedLogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedLogCell.swift; sourceTree = "<group>"; };
+		829B63E61B35EE2E0001DC2F /* DetailedLogCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailedLogCell.xib; sourceTree = "<group>"; };
 		93F5CA693B67D0AE7EB63C36 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16ED0EA1B35D004006F4D94 /* SMG Times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMG Times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16ED0EE1B35D005006F4D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 			children = (
 				A16ED10F1B35D384006F4D94 /* DailyLogCell.swift */,
 				A16ED1101B35D384006F4D94 /* DailyLogCell.xib */,
+				829B63E41B35EDAA0001DC2F /* DetailedLogCell.swift */,
+				829B63E61B35EE2E0001DC2F /* DetailedLogCell.xib */,
 			);
 			name = Log;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 			files = (
 				A16ED0F51B35D005006F4D94 /* Main.storyboard in Resources */,
 				A16ED0FA1B35D005006F4D94 /* LaunchScreen.xib in Resources */,
+				829B63E71B35EE2E0001DC2F /* DetailedLogCell.xib in Resources */,
 				A16ED1121B35D384006F4D94 /* DailyLogCell.xib in Resources */,
 				A16ED0F71B35D005006F4D94 /* Images.xcassets in Resources */,
 			);
@@ -340,6 +347,7 @@
 				A16ED0F01B35D005006F4D94 /* AppDelegate.swift in Sources */,
 				A16ED1231B35E241006F4D94 /* NSDate+Additions.m in Sources */,
 				A16ED11A1B35D79B006F4D94 /* DailyRecord.swift in Sources */,
+				829B63E51B35EDAA0001DC2F /* DetailedLogCell.swift in Sources */,
 				A16ED1111B35D384006F4D94 /* DailyLogCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
