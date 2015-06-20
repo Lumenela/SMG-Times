@@ -17,6 +17,7 @@ class DetailedLogCell: UITableViewCell {
     @IBOutlet weak var plusBtn: UIButton!
     @IBOutlet weak var timeIcon: UIImageView!
     @IBOutlet weak var bgLbl: UIImageView!
+    var changeHandler : (() -> Void)?
     
     var timeRecord : TimeRecord? {
         didSet {
@@ -25,6 +26,34 @@ class DetailedLogCell: UITableViewCell {
                 self.timeLabel?.text = String(record.time)
                 self.timeIcon?.image = UIImage(named: record.type.icon_name)
                 self.bgLbl?.image = UIImage(named: record.type.bg_name)
+            }
+        }
+    }
+    
+    @IBAction func plus() {
+        if let record = timeRecord {
+            record.time++
+            if record.time == 0 {
+                self.minusBtn.enabled = false
+            } else {
+                self.minusBtn.enabled = true
+            }
+            self.timeLabel?.text = String(record.time)
+            if let handler = self.changeHandler {
+                handler()
+            }
+        }
+    }
+    
+    @IBAction func minust() {
+        if let record = timeRecord {
+            record.time--
+            if record.time == 0 {
+                self.minusBtn.enabled = false
+            }
+            self.timeLabel?.text = String(record.time)
+            if let handler = self.changeHandler {
+                handler()
             }
         }
     }

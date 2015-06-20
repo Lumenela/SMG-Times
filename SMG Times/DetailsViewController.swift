@@ -31,6 +31,7 @@ class DetailsViewController: UITableViewController{
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("DetailedCell", forIndexPath: indexPath) as! DetailedLogCell
         cell.timeRecord = self.record?.timeRecordList?[indexPath.row]
+        cell.changeHandler = {self.tableView.reloadData()}
         return cell
     }
     
@@ -47,8 +48,5 @@ class DetailsViewController: UITableViewController{
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return DetailedHeader.height()
     }
-    
-    
-
     
 }

@@ -13,7 +13,7 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="10U-vy-fcJ" id="teF-73-gmV">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="82h-Ye-LEb" userLabel="bgLbl">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="82h-Ye-LEb" userLabel="bgLbl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="com" translatesAutoresizingMaskIntoConstraints="NO" id="eDA-nc-6hY" userLabel="timeIcon">
@@ -33,10 +33,10 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ZX-gD-bxS">
-                        <rect key="frame" x="225.5" y="165" width="149.5" height="45"/>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ZX-gD-bxS">
+                        <rect key="frame" x="226" y="165" width="150" height="45"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5p-B7-DAz" userLabel="plusBtn">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5p-B7-DAz" userLabel="plusBtn">
                                 <rect key="frame" x="97" y="6" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="5XP-NC-wfQ"/>
@@ -45,6 +45,9 @@
                                 <state key="normal" image="+">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="plus" destination="10U-vy-fcJ" eventType="touchUpInside" id="Xnz-a7-LTg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfw-af-sha" userLabel="minusBtn">
                                 <rect key="frame" x="20" y="6" width="32" height="32"/>
@@ -55,9 +58,12 @@
                                 <state key="normal" image="-">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="minust" destination="10U-vy-fcJ" eventType="touchUpInside" id="E5r-Zv-xnM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="8" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbS-g8-Kjk" userLabel="timeLbl">
-                                <rect key="frame" x="66" y="12" width="16.5" height="21"/>
+                                <rect key="frame" x="66" y="12" width="17" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="250" constant="42" id="RKC-MC-cHT"/>
                                     <constraint firstAttribute="height" constant="21" id="X1c-ty-FNy"/>
