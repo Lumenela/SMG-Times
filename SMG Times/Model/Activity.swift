@@ -22,7 +22,7 @@ struct Activity {
     var type: ActivityType
     
     static func development() -> Activity {
-        let activity = Activity(name: "DEVELOPMENT", shortName: "Dev", type: ActivityType.Development)
+        let activity = Activity(name: "DEVELOPMENT", shortName: "DEV", type: ActivityType.Development)
         return activity;
     }
     
