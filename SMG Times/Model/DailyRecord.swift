@@ -15,17 +15,18 @@ class DailyRecord {
     var day : String {
         get {
             if let aDate = self.date {
-                return aDate.weekdayName;
+                return aDate.weekdayName
             }
-            return "";
+            return ""
         }
     }
     
     var shortDateString : String {
         get {
             if let aDate = self.date {
-                return aDate.monthAndDayString;
+                return aDate.monthAndDayString
             }
+            return ""
         }
     }
 }
