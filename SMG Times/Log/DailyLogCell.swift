@@ -7,19 +7,64 @@
 //
 
 import UIKit
+import SnapKit
+
 
 class DailyLogCell: UITableViewCell {
     
     @IBOutlet var dayLabel : UILabel?
     @IBOutlet var dateLabel : UILabel?
-
+    
+    @IBOutlet var timeLabel1 : UILabel?
+    @IBOutlet var timeLabel2 : UILabel?
+    @IBOutlet var timeLabel3 : UILabel?
+    @IBOutlet var tag1 : TagView?
+    @IBOutlet var tag2 : TagView?
+    @IBOutlet var tag3 : TagView?
+    
+    var tags : Array<TagView>?
+    var timeLabels : Array<UILabel>?
+    
     var dailyRecord : DailyRecord? {
         didSet {
             if let record = dailyRecord {
                 self.dayLabel?.text = record.day
                 self.dateLabel?.text = record.shortDateString
+                self.updateTags()
             }
         }
+    }
+    
+    func updateTags() {
+        for i in 0 ... 2 {
+            if let label = self.timeLabels?[i] {
+                label.hidden = true
+            }
+            if let tag = self.tags?[i] {
+                tag.hidden = true
+            }
+        }
+        
+        var index = 0
+        if let records = self.dailyRecord?.timeRecordList {
+            for timeRecord in records {
+                if let label = self.timeLabels?[index] {
+                    label.text = String(format : "%d", timeRecord.time)
+                    label.hidden = false
+                }
+                if let tag = self.tags?[index] {
+                    tag.activity = timeRecord.type
+                    tag.hidden = false
+                }
+                index++
+            }
+        }
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.timeLabels = [self.timeLabel1!, self.timeLabel2!, self.timeLabel3!]
+        self.tags = [self.tag1!, self.tag2!, self.tag3!]
     }
     
     static func nib() -> UINib {
