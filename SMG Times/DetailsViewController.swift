@@ -37,6 +37,18 @@ class DetailsViewController: UITableViewController{
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return DetailedLogCell.height()
     }
+    
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = DetailedHeader.fromNib()
+        header?.dailyRecord = self.record!
+        return header
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return DetailedHeader.height()
+    }
+    
+    
 
     
 }

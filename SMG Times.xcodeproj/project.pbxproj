@@ -11,7 +11,7 @@
 		829B63E51B35EDAA0001DC2F /* DetailedLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829B63E41B35EDAA0001DC2F /* DetailedLogCell.swift */; };
 		829B63E71B35EE2E0001DC2F /* DetailedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829B63E61B35EE2E0001DC2F /* DetailedCell.xib */; };
 		829B63E91B35F3320001DC2F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829B63E81B35F3320001DC2F /* DetailsViewController.swift */; };
-		829B63EB1B35F63B0001DC2F /* detailed_header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829B63EA1B35F63B0001DC2F /* detailed_header.xib */; };
+		829B63EB1B35F63B0001DC2F /* DetailedHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829B63EA1B35F63B0001DC2F /* DetailedHeader.xib */; };
 		A16ED0F01B35D005006F4D94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16ED0EF1B35D005006F4D94 /* AppDelegate.swift */; };
 		A16ED0F21B35D005006F4D94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16ED0F11B35D005006F4D94 /* ViewController.swift */; };
 		A16ED0F51B35D005006F4D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16ED0F31B35D005006F4D94 /* Main.storyboard */; };
@@ -26,6 +26,7 @@
 		A16ED1231B35E241006F4D94 /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A16ED1221B35E241006F4D94 /* NSDate+Additions.m */; };
 		A16ED1261B35F694006F4D94 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16ED1251B35F694006F4D94 /* TagView.swift */; };
 		A16ED1281B35F7DE006F4D94 /* TagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A16ED1271B35F7DE006F4D94 /* TagView.xib */; };
+		A16ED12E1B360FDB006F4D94 /* DetailedHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16ED12D1B360FDB006F4D94 /* DetailedHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,7 @@
 		829B63E41B35EDAA0001DC2F /* DetailedLogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedLogCell.swift; sourceTree = "<group>"; };
 		829B63E61B35EE2E0001DC2F /* DetailedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailedCell.xib; sourceTree = "<group>"; };
 		829B63E81B35F3320001DC2F /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		829B63EA1B35F63B0001DC2F /* detailed_header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = detailed_header.xib; sourceTree = "<group>"; };
+		829B63EA1B35F63B0001DC2F /* DetailedHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailedHeader.xib; sourceTree = "<group>"; };
 		93F5CA693B67D0AE7EB63C36 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16ED0EA1B35D004006F4D94 /* SMG Times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMG Times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16ED0EE1B35D005006F4D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		A16ED1221B35E241006F4D94 /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Additions.m"; path = "Third Party/NSDate+Additions.m"; sourceTree = "<group>"; };
 		A16ED1251B35F694006F4D94 /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TagView.swift; path = Log/TagView.swift; sourceTree = "<group>"; };
 		A16ED1271B35F7DE006F4D94 /* TagView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TagView.xib; path = Log/TagView.xib; sourceTree = "<group>"; };
+		A16ED12D1B360FDB006F4D94 /* DetailedHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailedHeader.swift; path = Log/DetailedHeader.swift; sourceTree = "<group>"; };
 		A2093FF41091CEF8C486A7A1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D4C1ED00552FDEF1F97BF58F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,11 +157,12 @@
 			children = (
 				A16ED10F1B35D384006F4D94 /* DailyLogCell.swift */,
 				A16ED1101B35D384006F4D94 /* DailyLogCell.xib */,
-				829B63EA1B35F63B0001DC2F /* detailed_header.xib */,
+				829B63EA1B35F63B0001DC2F /* DetailedHeader.xib */,
 				829B63E41B35EDAA0001DC2F /* DetailedLogCell.swift */,
 				829B63E61B35EE2E0001DC2F /* DetailedCell.xib */,
 				A16ED1251B35F694006F4D94 /* TagView.swift */,
 				A16ED1271B35F7DE006F4D94 /* TagView.xib */,
+				A16ED12D1B360FDB006F4D94 /* DetailedHeader.swift */,
 			);
 			name = Log;
 			sourceTree = "<group>";
@@ -283,7 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				829B63EB1B35F63B0001DC2F /* detailed_header.xib in Resources */,
+				829B63EB1B35F63B0001DC2F /* DetailedHeader.xib in Resources */,
 				A16ED0F51B35D005006F4D94 /* Main.storyboard in Resources */,
 				A16ED1281B35F7DE006F4D94 /* TagView.xib in Resources */,
 				A16ED0FA1B35D005006F4D94 /* LaunchScreen.xib in Resources */,
@@ -357,6 +360,7 @@
 			files = (
 				A16ED1181B35D542006F4D94 /* Activity.swift in Sources */,
 				A16ED0F21B35D005006F4D94 /* ViewController.swift in Sources */,
+				A16ED12E1B360FDB006F4D94 /* DetailedHeader.swift in Sources */,
 				829B63E91B35F3320001DC2F /* DetailsViewController.swift in Sources */,
 				A16ED1151B35D4E8006F4D94 /* TimeRecord.swift in Sources */,
 				A16ED0F01B35D005006F4D94 /* AppDelegate.swift in Sources */,

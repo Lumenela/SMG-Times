@@ -85,7 +85,7 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-f1-PXn" customClass="TagView" customModule="SMG_Times" customModuleProvider="target">
-                                <rect key="frame" x="136" y="5" width="101" height="29"/>
+                                <rect key="frame" x="136" y="5" width="87" height="29"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dev-small" translatesAutoresizingMaskIntoConstraints="NO" id="pbj-BE-z3E">
                                         <rect key="frame" x="5" y="10" width="9" height="9"/>
@@ -107,6 +107,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="E9X-1e-ao0" secondAttribute="trailing" id="BVO-9B-OmX"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="E9X-1e-ao0" secondAttribute="bottom" constant="5" id="CXr-rS-GnG"/>
                                     <constraint firstAttribute="width" priority="250" constant="101" id="KT3-WN-hYU"/>
                                     <constraint firstAttribute="height" priority="250" constant="29" id="LCq-Rn-1sS"/>
@@ -131,7 +132,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ImH-RK-PEs" customClass="TagView" customModule="SMG_Times" customModuleProvider="target">
-                                <rect key="frame" x="258" y="5" width="101" height="29"/>
+                                <rect key="frame" x="244" y="5" width="87" height="29"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dev-small" translatesAutoresizingMaskIntoConstraints="NO" id="puh-m1-tDx">
                                         <rect key="frame" x="5" y="10" width="9" height="9"/>
@@ -155,6 +156,7 @@
                                 <constraints>
                                     <constraint firstItem="0xK-oS-tab" firstAttribute="leading" secondItem="puh-m1-tDx" secondAttribute="trailing" constant="5" id="80x-Cy-N6J"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0xK-oS-tab" secondAttribute="bottom" constant="5" id="H3t-El-N4Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="0xK-oS-tab" secondAttribute="trailing" id="JNQ-Sg-TbU"/>
                                     <constraint firstItem="0xK-oS-tab" firstAttribute="top" secondItem="ImH-RK-PEs" secondAttribute="top" constant="10" id="VCC-jx-7Pf"/>
                                     <constraint firstItem="puh-m1-tDx" firstAttribute="leading" secondItem="ImH-RK-PEs" secondAttribute="leading" constant="5" id="cd3-5B-4tS"/>
                                     <constraint firstAttribute="width" priority="250" constant="101" id="nNS-Wi-DeH"/>
@@ -167,7 +169,7 @@
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jf-Wa-Aly">
-                                <rect key="frame" x="242" y="0.0" width="14" height="30"/>
+                                <rect key="frame" x="228" y="0.0" width="14" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="250" constant="42" id="Gat-e6-Uy4"/>
                                     <constraint firstAttribute="height" priority="250" constant="21" id="emJ-nM-WZz"/>
