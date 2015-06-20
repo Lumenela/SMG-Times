@@ -8,7 +8,7 @@
         <scene sceneID="Clz-8f-XO1">
             <objects>
                 <tableViewController id="euP-iT-5yS" customClass="ViewController" customModule="SMG_Times" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gYE-bm-829">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Trf-De-c8Q">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,7 +27,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="EgR-Q1-coQ"/>
                     <connections>
-                        <segue destination="lz8-6U-pHp" kind="show" id="6Qn-Cf-Kvc"/>
+                        <segue destination="GMr-nu-Uab" kind="show" identifier="Detail" id="rVq-lt-QgY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIZ-ik-xew" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -37,8 +37,8 @@
         <!--Details View Controller-->
         <scene sceneID="Ksz-dk-IJk">
             <objects>
-                <tableViewController storyboardIdentifier="DetailsViewController" id="lz8-6U-pHp" customClass="DetailsViewController" customModule="SMG_Times" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pdb-59-UB9">
+                <tableViewController storyboardIdentifier="DetailsViewController" id="GMr-nu-Uab" customClass="DetailsViewController" customModule="SMG_Times" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gYE-bm-829">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -51,8 +51,8 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="lz8-6U-pHp" id="Cnx-9y-ZAg"/>
-                            <outlet property="delegate" destination="lz8-6U-pHp" id="H9g-ID-xzq"/>
+                            <outlet property="dataSource" destination="GMr-nu-Uab" id="5Yn-SR-QgA"/>
+                            <outlet property="delegate" destination="GMr-nu-Uab" id="wPi-jh-9WV"/>
                         </connections>
                     </tableView>
                 </tableViewController>

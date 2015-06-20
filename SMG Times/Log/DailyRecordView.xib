@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnp-y4-7JU">
+                    <rect key="frame" x="0.0" y="0.0" width="14" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="250" constant="21" id="mGr-yO-Zan"/>
+                        <constraint firstAttribute="width" priority="250" constant="42" id="tDb-Kb-C6f"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="V7X-CK-Ecn" customClass="TagView" customModule="SMG_Times" customModuleProvider="target">
+                    <rect key="frame" x="16" y="6" width="101" height="29"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dev-small" translatesAutoresizingMaskIntoConstraints="NO" id="xt6-ip-bNR">
+                            <rect key="frame" x="5" y="10" width="9" height="9"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="9" id="3BI-xf-qjs"/>
+                                <constraint firstAttribute="width" constant="9" id="avs-Rp-l5Z"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="COMMUNIC." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbq-Zw-mLf">
+                            <rect key="frame" x="19" y="10" width="68" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" priority="250" constant="68" id="K2c-w7-aD3"/>
+                                <constraint firstAttribute="height" priority="250" constant="14" id="Z6Z-y3-ycY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="xt6-ip-bNR" firstAttribute="leading" secondItem="V7X-CK-Ecn" secondAttribute="leading" constant="5" id="8rw-E0-eHQ"/>
+                        <constraint firstItem="xt6-ip-bNR" firstAttribute="top" secondItem="V7X-CK-Ecn" secondAttribute="top" constant="10" id="BSb-DM-rah"/>
+                        <constraint firstAttribute="height" priority="250" constant="29" id="OMi-Ql-Ay9"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lbq-Zw-mLf" secondAttribute="bottom" constant="5" id="SnP-Sy-BYl"/>
+                        <constraint firstItem="Lbq-Zw-mLf" firstAttribute="leading" secondItem="xt6-ip-bNR" secondAttribute="trailing" constant="5" id="hhQ-hX-tYw"/>
+                        <constraint firstAttribute="width" priority="250" constant="101" id="rn2-Cb-IlR"/>
+                        <constraint firstItem="Lbq-Zw-mLf" firstAttribute="top" secondItem="V7X-CK-Ecn" secondAttribute="top" constant="10" id="zUs-N4-0js"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="icon" destination="xt6-ip-bNR" id="6J3-hb-gNW"/>
+                        <outlet property="label" destination="Lbq-Zw-mLf" id="YbU-MQ-r5F"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Mnp-y4-7JU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6Rf-z2-UEN"/>
+                <constraint firstItem="V7X-CK-Ecn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="M5B-gC-zHE"/>
+                <constraint firstItem="Mnp-y4-7JU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cqp-XC-xAK"/>
+                <constraint firstItem="V7X-CK-Ecn" firstAttribute="leading" secondItem="Mnp-y4-7JU" secondAttribute="trailing" constant="2" id="z8z-yw-5Uw"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="dev-small" width="11" height="11"/>
+    </resources>
+</document>

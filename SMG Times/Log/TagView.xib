@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" id="Azt-Yx-9se" customClass="TagView" customModule="SMG_Times" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="101" height="29"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dev-small" translatesAutoresizingMaskIntoConstraints="NO" id="cPe-DB-BnT">
+                    <rect key="frame" x="5" y="10" width="9" height="9"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="9" id="SGY-aK-m6d"/>
+                        <constraint firstAttribute="height" constant="9" id="zdk-1O-qRy"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="COMMUNIC." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B70-5m-uw5">
+                    <rect key="frame" x="19" y="10" width="68" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="250" constant="68" id="6FW-pZ-gbF"/>
+                        <constraint firstAttribute="height" priority="250" constant="14" id="9Mh-Sm-WnN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.81176470588235294" green="0.84705882352941175" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cPe-DB-BnT" firstAttribute="top" secondItem="Azt-Yx-9se" secondAttribute="top" constant="10" id="AVj-pW-NfI"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="B70-5m-uw5" secondAttribute="bottom" constant="5" id="D8y-u9-ok2"/>
+                <constraint firstItem="B70-5m-uw5" firstAttribute="leading" secondItem="cPe-DB-BnT" secondAttribute="trailing" constant="5" id="PZR-Yr-GIJ"/>
+                <constraint firstItem="cPe-DB-BnT" firstAttribute="leading" secondItem="Azt-Yx-9se" secondAttribute="leading" constant="5" id="kG9-2s-9NY"/>
+                <constraint firstItem="B70-5m-uw5" firstAttribute="top" secondItem="Azt-Yx-9se" secondAttribute="top" constant="10" id="q4U-hQ-9JT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="icon" destination="cPe-DB-BnT" id="MzJ-gl-vYc"/>
+                <outlet property="label" destination="B70-5m-uw5" id="nFL-P1-kUY"/>
+            </connections>
+            <point key="canvasLocation" x="11.5" y="121.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dev-small" width="11" height="11"/>
+    </resources>
+</document>

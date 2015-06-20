@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UITableViewController {
 
     var records : Array<DailyRecord>?
+    var selectedRecord : DailyRecord?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,10 +41,18 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let record = self.records?[indexPath.row]
-        let detailsController = self.storyboard?.instantiateViewControllerWithIdentifier("DetailsViewController") as! DetailsViewController
-        detailsController.record = record!
-        self.presentViewController(detailsController, animated: true, completion: nil)
+        if let list = self.records {
+            self.selectedRecord = list[indexPath.row]
+            self.performSegueWithIdentifier("Detail", sender: self)
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "Detail" {
+            let details = segue.destinationViewController as! DetailsViewController
+            details.record = self.selectedRecord
+            self.navigationController?.pushViewController(details, animated: true)
+        }
     }
 
 }

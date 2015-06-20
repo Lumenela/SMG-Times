@@ -24,6 +24,9 @@
 		A16ED1181B35D542006F4D94 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16ED1171B35D542006F4D94 /* Activity.swift */; };
 		A16ED11A1B35D79B006F4D94 /* DailyRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16ED1191B35D79B006F4D94 /* DailyRecord.swift */; };
 		A16ED1231B35E241006F4D94 /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A16ED1221B35E241006F4D94 /* NSDate+Additions.m */; };
+		A16ED1261B35F694006F4D94 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16ED1251B35F694006F4D94 /* TagView.swift */; };
+		A16ED1281B35F7DE006F4D94 /* TagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A16ED1271B35F7DE006F4D94 /* TagView.xib */; };
+		A16ED12A1B35FA61006F4D94 /* DailyRecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A16ED1291B35FA61006F4D94 /* DailyRecordView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		A16ED11B1B35E21E006F4D94 /* SMG Times-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMG Times-Bridging-Header.h"; sourceTree = "<group>"; };
 		A16ED1211B35E241006F4D94 /* NSDate+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Additions.h"; path = "Third Party/NSDate+Additions.h"; sourceTree = "<group>"; };
 		A16ED1221B35E241006F4D94 /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Additions.m"; path = "Third Party/NSDate+Additions.m"; sourceTree = "<group>"; };
+		A16ED1251B35F694006F4D94 /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TagView.swift; path = Log/TagView.swift; sourceTree = "<group>"; };
+		A16ED1271B35F7DE006F4D94 /* TagView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TagView.xib; path = Log/TagView.xib; sourceTree = "<group>"; };
+		A16ED1291B35FA61006F4D94 /* DailyRecordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DailyRecordView.xib; path = Log/DailyRecordView.xib; sourceTree = "<group>"; };
 		A2093FF41091CEF8C486A7A1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D4C1ED00552FDEF1F97BF58F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +159,9 @@
 				A16ED1101B35D384006F4D94 /* DailyLogCell.xib */,
 				829B63E41B35EDAA0001DC2F /* DetailedLogCell.swift */,
 				829B63E61B35EE2E0001DC2F /* DetailedCell.xib */,
+				A16ED1251B35F694006F4D94 /* TagView.swift */,
+				A16ED1271B35F7DE006F4D94 /* TagView.xib */,
+				A16ED1291B35FA61006F4D94 /* DailyRecordView.xib */,
 				829B63EA1B35F63B0001DC2F /* detailed_header.xib */,
 			);
 			name = Log;
@@ -279,10 +288,12 @@
 			files = (
 				829B63EB1B35F63B0001DC2F /* detailed_header.xib in Resources */,
 				A16ED0F51B35D005006F4D94 /* Main.storyboard in Resources */,
+				A16ED1281B35F7DE006F4D94 /* TagView.xib in Resources */,
 				A16ED0FA1B35D005006F4D94 /* LaunchScreen.xib in Resources */,
 				829B63E71B35EE2E0001DC2F /* DetailedCell.xib in Resources */,
 				A16ED1121B35D384006F4D94 /* DailyLogCell.xib in Resources */,
 				A16ED0F71B35D005006F4D94 /* Images.xcassets in Resources */,
+				A16ED12A1B35FA61006F4D94 /* DailyRecordView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +368,7 @@
 				A16ED11A1B35D79B006F4D94 /* DailyRecord.swift in Sources */,
 				829B63E51B35EDAA0001DC2F /* DetailedLogCell.swift in Sources */,
 				A16ED1111B35D384006F4D94 /* DailyLogCell.swift in Sources */,
+				A16ED1261B35F694006F4D94 /* TagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
