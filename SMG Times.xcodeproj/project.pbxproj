@@ -14,6 +14,11 @@
 		A16ED0F71B35D005006F4D94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16ED0F61B35D005006F4D94 /* Images.xcassets */; };
 		A16ED0FA1B35D005006F4D94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A16ED0F81B35D005006F4D94 /* LaunchScreen.xib */; };
 		A16ED1061B35D005006F4D94 /* SMG_TimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16ED1051B35D005006F4D94 /* SMG_TimesTests.swift */; };
+		A16ED1111B35D384006F4D94 /* DailyLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16ED10F1B35D384006F4D94 /* DailyLogCell.swift */; };
+		A16ED1121B35D384006F4D94 /* DailyLogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A16ED1101B35D384006F4D94 /* DailyLogCell.xib */; };
+		A16ED1151B35D4E8006F4D94 /* TimeRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16ED1141B35D4E8006F4D94 /* TimeRecord.swift */; };
+		A16ED1181B35D542006F4D94 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16ED1171B35D542006F4D94 /* Activity.swift */; };
+		A16ED11A1B35D79B006F4D94 /* DailyRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16ED1191B35D79B006F4D94 /* DailyRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		A16ED0FF1B35D005006F4D94 /* SMG TimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SMG TimesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16ED1041B35D005006F4D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A16ED1051B35D005006F4D94 /* SMG_TimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMG_TimesTests.swift; sourceTree = "<group>"; };
+		A16ED10F1B35D384006F4D94 /* DailyLogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DailyLogCell.swift; path = Log/DailyLogCell.swift; sourceTree = "<group>"; };
+		A16ED1101B35D384006F4D94 /* DailyLogCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DailyLogCell.xib; path = Log/DailyLogCell.xib; sourceTree = "<group>"; };
+		A16ED1141B35D4E8006F4D94 /* TimeRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeRecord.swift; path = Model/TimeRecord.swift; sourceTree = "<group>"; };
+		A16ED1171B35D542006F4D94 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = Model/Activity.swift; sourceTree = "<group>"; };
+		A16ED1191B35D79B006F4D94 /* DailyRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DailyRecord.swift; path = Model/DailyRecord.swift; sourceTree = "<group>"; };
 		A2093FF41091CEF8C486A7A1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D4C1ED00552FDEF1F97BF58F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +100,8 @@
 				A16ED0F61B35D005006F4D94 /* Images.xcassets */,
 				A16ED0F81B35D005006F4D94 /* LaunchScreen.xib */,
 				A16ED0ED1B35D004006F4D94 /* Supporting Files */,
+				A16ED1131B35D389006F4D94 /* Log */,
+				A16ED1161B35D4EE006F4D94 /* Model */,
 			);
 			path = "SMG Times";
 			sourceTree = "<group>";
@@ -117,6 +129,25 @@
 				A16ED1041B35D005006F4D94 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A16ED1131B35D389006F4D94 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				A16ED10F1B35D384006F4D94 /* DailyLogCell.swift */,
+				A16ED1101B35D384006F4D94 /* DailyLogCell.xib */,
+			);
+			name = Log;
+			sourceTree = "<group>";
+		};
+		A16ED1161B35D4EE006F4D94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A16ED1141B35D4E8006F4D94 /* TimeRecord.swift */,
+				A16ED1171B35D542006F4D94 /* Activity.swift */,
+				A16ED1191B35D79B006F4D94 /* DailyRecord.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		C0CA4BB4C207793CC2C790AA /* Pods */ = {
@@ -220,6 +251,7 @@
 			files = (
 				A16ED0F51B35D005006F4D94 /* Main.storyboard in Resources */,
 				A16ED0FA1B35D005006F4D94 /* LaunchScreen.xib in Resources */,
+				A16ED1121B35D384006F4D94 /* DailyLogCell.xib in Resources */,
 				A16ED0F71B35D005006F4D94 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,8 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16ED1181B35D542006F4D94 /* Activity.swift in Sources */,
 				A16ED0F21B35D005006F4D94 /* ViewController.swift in Sources */,
+				A16ED1151B35D4E8006F4D94 /* TimeRecord.swift in Sources */,
 				A16ED0F01B35D005006F4D94 /* AppDelegate.swift in Sources */,
+				A16ED11A1B35D79B006F4D94 /* DailyRecord.swift in Sources */,
+				A16ED1111B35D384006F4D94 /* DailyLogCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
