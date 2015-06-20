@@ -62,7 +62,7 @@ class DetailedHeader: UIView {
 
 
     static func height() -> CGFloat {
-        return 34
+        return 70.0
     }
 
     static func fromNib() -> DetailedHeader? {

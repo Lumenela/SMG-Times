@@ -35,7 +35,7 @@ struct Activity {
     }
     
     static func communication() -> Activity {
-        let activity = Activity(name: "Communication", shortName: "Communic.", type: ActivityType.Communication, icon_name: "com", small_icon_name: "com-small", bg_name: "com_large")
+        let activity = Activity(name: "Communication", shortName: "COMMUNIC.", type: ActivityType.Communication, icon_name: "com", small_icon_name: "com-small", bg_name: "com_large")
         return activity;
     }
 }
