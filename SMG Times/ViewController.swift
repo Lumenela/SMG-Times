@@ -53,6 +53,21 @@ class ViewController: UITableViewController {
             details.record = self.selectedRecord
         }
     }
-
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 60
+    }
+    
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footer: UIView = UIView(frame: CGRectMake(0, 0, 320, 60))
+        let greenButton: UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
+        greenButton.setTitle("LOG TIME", forState: UIControlState.Normal)
+        greenButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        greenButton.frame=CGRectMake(0, 0, 320, 60)
+        greenButton.backgroundColor = UIColor(red: CGFloat(0), green: CGFloat(230), blue: CGFloat(118), alpha: CGFloat(100))
+        footer.addSubview(greenButton)
+        return footer
+    }
+    
 }
 
