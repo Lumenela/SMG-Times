@@ -10,6 +10,11 @@ import Foundation
 
 
 class TimeRecord {
-    var type : Activity?
+    var type : Activity
     var time = 0
+    
+    init(type : Activity, time : NSInteger) {
+        self.type = type
+        self.time = time
+    }
 }
