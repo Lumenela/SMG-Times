@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UITableViewController {
 
     var records : Array<DailyRecord>?
@@ -45,6 +46,10 @@ class ViewController: UITableViewController {
             self.selectedRecord = list[indexPath.row]
             self.performSegueWithIdentifier("Detail", sender: self)
         }
+    }
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 1
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

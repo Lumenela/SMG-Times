@@ -25,7 +25,7 @@ struct Activity {
     var bg_name: String
     
     static func development() -> Activity {
-        let activity = Activity(name: "Development", shortName: "Dev", type: ActivityType.Development, icon_name: "dev", small_icon_name: "dev-small", bg_name: "dev_large")
+        let activity = Activity(name: "Development", shortName: "DEV", type: ActivityType.Development, icon_name: "dev", small_icon_name: "dev-small", bg_name: "dev_large")
         return activity;
     }
     
