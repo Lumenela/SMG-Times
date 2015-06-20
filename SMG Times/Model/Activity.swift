@@ -22,17 +22,17 @@ struct Activity {
     var type: ActivityType
     
     static func development() -> Activity {
-        let activity = Activity(name: "Development", shortName: "Dev", type: ActivityType.Development)
+        let activity = Activity(name: "DEVELOPMENT", shortName: "Dev", type: ActivityType.Development)
         return activity;
     }
     
     static func management() -> Activity {
-        let activity = Activity(name: "Management", shortName: "PM", type: ActivityType.Management)
+        let activity = Activity(name: "MANAGEMENT", shortName: "PM", type: ActivityType.Management)
         return activity;
     }
     
     static func communication() -> Activity {
-        let activity = Activity(name: "Communication", shortName: "Communic.", type: ActivityType.Communication)
+        let activity = Activity(name: "COMMUNICATION", shortName: "COMMUNIC.", type: ActivityType.Communication)
         return activity;
     }
 }
