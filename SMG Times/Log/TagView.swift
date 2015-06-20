@@ -17,14 +17,7 @@ class TagView: UIView {
         didSet {
             if let theActivity = self.activity {
                 self.label?.text = theActivity.shortName
-                switch theActivity.type {
-                case .Development :
-                    self.icon?.image = UIImage(named: "dev-small")
-                case .Communication :
-                    self.icon?.image = UIImage(named: "com-small")
-                case .Management :
-                    self.icon?.image = UIImage(named: "pm-small")
-                }
+                self.icon?.image = UIImage(named: theActivity.small_icon_name)
             }
         }
     }

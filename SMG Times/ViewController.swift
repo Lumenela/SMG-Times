@@ -51,7 +51,6 @@ class ViewController: UITableViewController {
         if segue.identifier == "Detail" {
             let details = segue.destinationViewController as! DetailsViewController
             details.record = self.selectedRecord
-            self.navigationController?.pushViewController(details, animated: true)
         }
     }
 
