@@ -217,6 +217,7 @@
                     <constraint firstAttribute="centerY" secondItem="ncd-lz-tJ8" secondAttribute="centerY" id="nCP-7f-zTP"/>
                 </constraints>
             </tableViewCellContentView>
+            <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
                 <outlet property="dateLabel" destination="hGA-6I-hOz" id="gSY-CZ-sON"/>
                 <outlet property="dayLabel" destination="DX5-hs-ild" id="4tM-DQ-gDk"/>

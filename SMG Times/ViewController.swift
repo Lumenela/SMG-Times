@@ -44,6 +44,7 @@ class ViewController: UITableViewController {
         greenButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         greenButton.frame=CGRectMake(0, 0, rootViewWidth, toolbarHeight)
         greenButton.backgroundColor = UIColor(red: CGFloat(0), green: CGFloat(230.0/255.0), blue: CGFloat(118.0/255.0), alpha: CGFloat(100))
+        greenButton.addTarget(self, action: "log", forControlEvents: UIControlEvents.TouchUpInside)
         toolbar?.addSubview(greenButton)
         self.navigationController!.view.addSubview(toolbar!)
         UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
@@ -51,6 +52,12 @@ class ViewController: UITableViewController {
         }, completion: nil)
         
         self.navigationItem.title = "CityIndex"
+    }
+    func log() {
+        self.navigationController?.popViewControllerAnimated(true)
+        let alert = UIAlertController(title: "SMG Times", message: "Thanks for loggin your time this week. You're awesome!", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.navigationController!.presentViewController(alert, animated: true, completion: nil)
     }
 
     override func viewWillDisappear(animated: Bool) {
@@ -99,7 +106,7 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 1
+        return 2
     }
     
 }

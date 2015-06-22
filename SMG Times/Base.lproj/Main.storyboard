@@ -34,6 +34,36 @@
             </objects>
             <point key="canvasLocation" x="970" y="539"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="RhI-4O-qEX">
+            <objects>
+                <viewController id="Fk6-PK-OeG" customClass="SettingsViewController" customModule="SMG_Times" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hMM-cf-G9H"/>
+                        <viewControllerLayoutGuide type="bottom" id="ixF-Ck-4Xt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3dg-BG-SML">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone 6-2" translatesAutoresizingMaskIntoConstraints="NO" id="nQg-RX-ZnW">
+                                <rect key="frame" x="0.0" y="-8" width="375" height="675"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nQg-RX-ZnW" firstAttribute="leading" secondItem="3dg-BG-SML" secondAttribute="leading" id="0WD-6l-daT"/>
+                            <constraint firstItem="nQg-RX-ZnW" firstAttribute="top" secondItem="3dg-BG-SML" secondAttribute="top" constant="-8" id="1E6-hz-lbD"/>
+                            <constraint firstAttribute="trailing" secondItem="nQg-RX-ZnW" secondAttribute="trailing" id="8hP-gI-cLe"/>
+                            <constraint firstItem="ixF-Ck-4Xt" firstAttribute="top" secondItem="nQg-RX-ZnW" secondAttribute="bottom" id="TvN-Sq-PVp"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3vR-dX-7Xp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="1251"/>
+        </scene>
         <!--Details View Controller-->
         <scene sceneID="Ksz-dk-IJk">
             <objects>
@@ -60,6 +90,78 @@
             </objects>
             <point key="canvasLocation" x="1656" y="539"/>
         </scene>
+        <!--SMG Times-->
+        <scene sceneID="KbS-HE-eQG">
+            <objects>
+                <viewController id="zIy-Ap-dgc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ozg-xC-qeE"/>
+                        <viewControllerLayoutGuide type="bottom" id="k0R-ZS-soD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wHv-Dk-0nN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cza-3T-bVC">
+                                <rect key="frame" x="0.0" y="530" width="600" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.90196078431372551" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Wox-8M-8MC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="LOG TIME HERE &gt;">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="euP-iT-5yS" kind="show" id="jqS-ZT-nkU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URZ-xd-wg0">
+                                <rect key="frame" x="139" y="79" width="322" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="322" id="WsZ-nt-Gq3"/>
+                                    <constraint firstAttribute="height" constant="63" id="pWp-em-1yg"/>
+                                </constraints>
+                                <string key="text">CUSTOMIZE YOUR SCHEDULE
+AND NOTIFICATIONS IN
+SETTINGS</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.68235296010971069" green="0.68235296010971069" blue="0.68235296010971069" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0H8-QS-6hC">
+                                <rect key="frame" x="221" y="152" width="159" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="fwx-er-TOB"/>
+                                    <constraint firstAttribute="height" constant="30" id="rf1-D6-8YS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" red="0.0" green="0.90196078431372551" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Fk6-PK-OeG" kind="show" id="RhZ-pz-3Le"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0H8-QS-6hC" firstAttribute="top" secondItem="URZ-xd-wg0" secondAttribute="bottom" constant="10" id="CIL-E7-9wd"/>
+                            <constraint firstAttribute="bottom" secondItem="Cza-3T-bVC" secondAttribute="bottom" id="Q4P-fY-34C"/>
+                            <constraint firstAttribute="centerX" secondItem="URZ-xd-wg0" secondAttribute="centerX" id="fnd-cF-c9R"/>
+                            <constraint firstItem="Cza-3T-bVC" firstAttribute="leading" secondItem="wHv-Dk-0nN" secondAttribute="leading" id="h5J-bS-XRk"/>
+                            <constraint firstItem="URZ-xd-wg0" firstAttribute="top" secondItem="Ozg-xC-qeE" secondAttribute="bottom" constant="15" id="maC-KP-ZoE"/>
+                            <constraint firstAttribute="centerX" secondItem="0H8-QS-6hC" secondAttribute="centerX" id="qAC-zg-gGi"/>
+                            <constraint firstAttribute="trailing" secondItem="Cza-3T-bVC" secondAttribute="trailing" id="sAM-bF-HXD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SMG Times" id="gaA-fz-0cG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QS3-My-r0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="531"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Z3c-ks-kyJ">
             <objects>
@@ -69,7 +171,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.046527597086938932" blue="0.31360527632212398" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="textShadowColor" red="0.9408667127" green="0.9408667127" blue="0.9408667127" alpha="1" colorSpace="calibratedRGB"/>
@@ -77,12 +179,15 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="euP-iT-5yS" kind="relationship" relationship="rootViewController" id="7fK-xI-UAj"/>
+                        <segue destination="zIy-Ap-dgc" kind="relationship" relationship="rootViewController" id="Y9y-Lq-4XQ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="479-Lb-la2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="158" y="539"/>
+            <point key="canvasLocation" x="-553" y="553"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iPhone 6-2" width="375" height="667"/>
+    </resources>
 </document>
